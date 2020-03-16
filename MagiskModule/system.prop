@@ -1,4 +1,5 @@
 # 这个文件将被 resetprop 读取
 # 示例: 改变 dpi
 # ro.sf.lcd_density=320
-debug.sf.latch_unsignaled=1
+#一个适用于960的玄学参数
+#debug.sf.latch_unsignaled=1
