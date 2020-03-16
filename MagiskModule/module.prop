@@ -1,0 +1,7 @@
+id=970utilization
+name=麒麟970EAS原生调度
+version=1
+versionCode=1
+author=Cain&Kindle4jerry
+description=麒麟970的基于EAS内核的调度
+minMagisk=17000
