@@ -11,6 +11,7 @@ echo "2000"> /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_u
 echo "2000"> /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
 echo "2000"> /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
 echo "2000"> /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
+echo "1"> /sys/kernel/eas/boost
 
 # EAS激进程度调整
 echo "0"> /dev/stune/background/schedtune.boost
