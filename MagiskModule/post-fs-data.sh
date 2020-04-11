@@ -17,11 +17,11 @@ echo "1"> /sys/kernel/eas/boost
 echo "0"> /dev/stune/background/schedtune.boost
 echo "0"> /dev/stune/background/schedtune.prefer_idle
 echo "10"> /dev/stune/foreground/schedtune.boost
-echo "1"> /dev/stune/foreground/schedtune.prefer_idle
+echo "0"> /dev/stune/foreground/schedtune.prefer_idle
 echo "10"> /dev/stune/top-app/schedtune.boost
-echo "1"> /dev/stune/top-app/schedtune.prefer_idle
+echo "0"> /dev/stune/top-app/schedtune.prefer_idle
 echo "10"> /dev/stune/rt/schedtune.boost
-echo "1"> /dev/stune/rt/schedtune.prefer_idle
+echo "0"> /dev/stune/rt/schedtune.prefer_idle
 
 # GPU最高和最低频率调整
 echo "103750000"> /sys/devices/platform/e82c0000.mali/devfreq/gpufreq/min_freq
