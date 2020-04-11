@@ -14,18 +14,18 @@ echo "2000"> /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
 echo "1"> /sys/kernel/eas/boost
 
 # EAS激进程度调整
-echo "0"> /dev/stune/background/schedtune.boost
+echo "-70"> /dev/stune/background/schedtune.boost
 echo "0"> /dev/stune/background/schedtune.prefer_idle
-echo "10"> /dev/stune/foreground/schedtune.boost
+echo "-50"> /dev/stune/foreground/schedtune.boost
 echo "0"> /dev/stune/foreground/schedtune.prefer_idle
-echo "10"> /dev/stune/top-app/schedtune.boost
+echo "-50"> /dev/stune/top-app/schedtune.boost
 echo "0"> /dev/stune/top-app/schedtune.prefer_idle
-echo "10"> /dev/stune/rt/schedtune.boost
+echo "-60"> /dev/stune/rt/schedtune.boost
 echo "0"> /dev/stune/rt/schedtune.prefer_idle
 
 # GPU最高和最低频率调整
 echo "103750000"> /sys/devices/platform/e82c0000.mali/devfreq/gpufreq/min_freq
-echo "767000000"> /sys/devices/platform/e82c0000.mali/devfreq/gpufreq/max_freq
+echo "332000000"> /sys/devices/platform/e82c0000.mali/devfreq/gpufreq/max_freq
 
 # 设置权限
 chmod 0444 /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
